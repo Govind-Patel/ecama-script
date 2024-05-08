@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecama script</title>
+</head>
+<body>
+    <h2>Destructuring Object</h2>
+</body>
+<script>
+   let user = {name:"Govind",email:"govind@gmail.com",mobile:98989}
+   let { email,...name} = user;
+//    let {email ,name} = user;
+//    console.warn(email)
+   console.warn(name)
+</script>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecama Script</title>
+</head>
+<body>
+    <h3>Lexical</h3>
+</body>
+<script>
+    let data={
+        list:'friend',
+        names:['Ram','Shyam','Mohan'],
+        getFriend:function(){
+          this.names.map((item)=>{
+            console.log(this.list , item);
+          })
+        }
+    }
+    data.getFriend();
+</script>
+</html>

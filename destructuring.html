@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecama script</title>
+</head>
+<body>
+    <h2>Destructuring</h2>
+</body>
+<script>
+    let fruits = ['mango','apple','kiwi','banana'];
+    // let [fruit1,,fruit2,fruit4="unknown"] = fruits;
+    // console.warn(fruit1);
+    // console.warn(fruit2);
+    // console.warn(fruit4);
+    
+       let [fruit1,fruit2,...fruitX] = fruits;
+       console.warn(fruitX);
+</script>
+</html>

@@ -1,0 +1,19 @@
+ // var a = 10;
+    // if(true){
+    //     var a = 20;
+    //     console.warn(a);
+    // }
+    // console.warn(a);
+    // let variable use
+    // let a = 10;
+    // if(true){
+    //     let a= 20;
+    //     console.warn(a);
+    // }
+    // console.warn(a);
+
+    for(var i = 0; i<=10;i++){
+        setTimeout(() => {
+            console.warn(i)
+        },400);
+    }

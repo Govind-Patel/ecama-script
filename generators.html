@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecama script</title>
+</head>
+<body>
+    <h1>Generators</h1>
+    <button onclick="getSteps()">Go step by step</button>
+</body>
+<script>
+    function* steps(){
+        let a = 10;
+        let b = 20;
+        console.warn(a+b);
+        yield 'step 1 completed'
+        console.warn(a-b)
+        yield 'step 2 completed'
+        console.warn(a*b)
+        yield 'step 3 completed'
+
+        return 'all step completed done'
+    }
+
+    let stp = steps();
+    function getSteps(){
+        console.warn(stp.next());
+    }
+</script>
+</html>

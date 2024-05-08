@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecama script</title>
+</head>
+<body>
+    <h2>Asynch await</h2>
+</body>
+<script>
+    async function getData(){
+        let handlePromise = new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+               resolve("All done")
+            },1000)
+        })
+        let x = await handlePromise;
+    //    handlePromise.then((x)=>{
+    //         console.log(x)
+    //    })
+    console.warn(x)
+    }
+    getData();
+</script>
+</html>

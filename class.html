@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+</head>
+<body>
+    <h3>Class Use</h3>
+</body>
+<script>
+    class Fruits{
+        name="Apple"
+        constructor()
+        {
+            console.warn("constructor",this.name);
+        }
+        getFruits(item){
+            return item;
+        }
+    }
+    let f = new Fruits;
+    console.warn(f.getFruits("Banana"));
+</script>
+</html>

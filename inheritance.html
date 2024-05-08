@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecama Script</title>
+</head>
+<body>
+    <h1>Inheritance</h1>
+</body>
+<script>
+    class Category{
+        dryFruit(){
+           return "Almond is dry fruit";
+        }
+        pomeFruit(){
+            return "Apple is pome fruit";
+        }
+    }
+    class Fruits extends Category{
+        constructor(){
+            super();
+            console.warn("constructor");
+        }
+        getName(){
+            return "you got apple";
+        }
+    }
+    let f = new Fruits;
+    let c = new Category;
+    console.warn(f.getName());
+    console.warn(f.pomeFruit());
+    console.warn(c.dryFruit());
+</script>
+</html>

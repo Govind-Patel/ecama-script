@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function </title>
+</head>
+<body>
+    <h2>Arrow Function use</h2>
+</body>
+<script>
+    let data = [10,20,30,40,50];
+    // function test(){
+    //     return 1;
+    // }
+    // let test2=function(){
+    //     return 2;
+    // }
+
+    // let test3 = ()=>{
+    //     return 3;
+    // }
+
+    // console.warn(test2());
+    // console.warn(test3());
+
+    // let newData = data.map(function(item){
+    //      return item*2;
+    // })
+    // let newData = data.map((item) => item*2)
+    // console.warn(newData);
+
+    let item = {
+        name:"Govind",
+        getName:function(){
+           console.warn("Normal",this)
+        },
+        getNameAtt:()=>{
+            console.warn("arrow",this);
+        }
+    }
+    item.getName();
+    item.getNameAtt();
+
+    
+</script>
+</html>
